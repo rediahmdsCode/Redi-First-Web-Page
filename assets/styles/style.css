@@ -13,6 +13,10 @@ body {
     background-color: #F8F8F8;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* Media Queries */
 @media screen and (min-width: 200px) {
 
@@ -98,4 +102,16 @@ header nav {
     background-color: #98becb;
     border-radius: .4em;
     box-shadow: 2em;
+}
+
+.bg-my-profile {
+    background-color: #CDC2AE;
+    border-radius: .4em;
+}
+
+/* Footer styling */
+footer {
+    background-color: #B4D2E7;
+    padding: 2em;
+    margin-top: 1.5em;
 }
