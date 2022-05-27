@@ -25,6 +25,7 @@ body {
         display: flex;
         flex-direction: column;
         margin: .7em .7em;
+        gap: 1em;
     }
 
     .text-center {
@@ -33,6 +34,8 @@ body {
 
     img {
         max-width: 60%;
+        margin-top: 1em;
+        border-radius: .4em;
     }
 
     .mobile-flex-cat {
@@ -40,7 +43,6 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* flex-wrap: wrap; */
     }
 }
 
@@ -82,4 +84,18 @@ header nav {
 /* Main content styling */
 .bg-orange-rounded {
     background-color: #f0c674;
+    border-radius: .4em;
+    box-shadow: 2em;
+}
+
+.bg-pink-rounded {
+    background-color: #f49b95;
+    border-radius: .4em;
+    box-shadow: 2em;
+}
+
+.bg-blue-rounded {
+    background-color: #98becb;
+    border-radius: .4em;
+    box-shadow: 2em;
 }
