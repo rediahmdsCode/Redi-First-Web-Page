@@ -24,27 +24,34 @@
             <h1>REDI WEB</h1>
         </div>
         <nav class="flex-navbar">
-            <ul>
-                <li>Home</li>
-                <li>Cat</li>
-                <li>About Me</li>
+            <ul class="flex-navbar">
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#cat">
+                    <li>Cat</li>
+                </a>
+                <a href="#about-me">
+                    <li>About Me</li>
+                </a>
             </ul>
         </nav>
     </header>
 
     <main class="mobile-flex-main desktop-flex-main">
         <div class="desktop-child-content desktop-flex-main-content">
-            <article>
+            <article id="home">
                 <div class="text-center">
                     <h2>Kucing</h2>
-                    <p>Kucing adalah spesies domestik dari mamalia karnivora. Tingkah lakunya membuatku gemas, kadang
+                    <p class="desktop-styled-text">Kucing adalah spesies domestik dari mamalia karnivora. Tingkah
+                        lakunya membuatku gemas, kadang
                         sebel
                         juga sih.. Tapi, itulah kucing alias majikanku. Oleh karena itu, mari berkenalan dengan majikan
                         saya.</p>
                 </div>
             </article>
 
-            <article class="mobile-flex-cat bg-orange-rounded mobile-margin-top">
+            <article class="mobile-flex-cat bg-orange-rounded mobile-margin-top" id="cat">
                 <img src="assets/pics/cat1.jpg" alt="Kucing oren yang lucu">
                 <h3>Asep si Kucing Oren</h3>
                 <p class="text-center desktop-styled-text">Kucing oren memang dikenal barbar oleh sebagian orang, namun
@@ -68,24 +75,34 @@
             </article>
         </div>
 
-        <aside class="text-center bg-my-profile desktop-child-profile">
+        <aside class="text-center bg-my-profile desktop-child-profile" id="about-me">
             <h2>Tentang Saya</h2>
             <img src="assets/pics/me.jpg" alt="Foto Pembuat">
-            <p>
-                Halo, Saya Redi Ahmad Supriyatna, seorang mahasiswa Jurusan Sistem Komputer di salah satu universitas
+            <p class="desktop-styled-text">
+                Halo, Saya Redi Ahmad Supriatna, seorang mahasiswa Jurusan Sistem Komputer di salah satu universitas
                 swasta Kota Tangerang. Saya ingin menjadi seorang Fullstack Developer.
+                <br>
+                <br>
+                <br>
+                Apresiasi saya dengan bertepuk tangan melalui tombol di bawah ini
+            </p>
+            <button id="applause-button">Tepuk tangan</button>
+            <p class="desktop-styled-text">
+                Anda telah bertepuk tangan sebanyak <span id="counter">0</span> kali.
             </p>
 
-            <p>
-                Apresiasi saya dengan bertepuk tangan di bawah ini
-            </p>
-            <button>Tepuk tangan</button>
         </aside>
     </main>
 
     <footer class="text-center">
         <span>Made by Redi Ahmad</span>
     </footer>
+
+
+
+
+
+    <script src="assets/scripts/script.js"></script>
 
 </body>
 

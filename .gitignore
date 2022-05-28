@@ -1,2 +1,8 @@
-# Ignore these files
+# Ignore these file
 /assets/pics/me.jpg
+.eslintrc.json
+package-lock.json
+package.json
+
+# Ignore these folder
+/node_modules
