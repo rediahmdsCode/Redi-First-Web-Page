@@ -20,52 +20,89 @@
 
 <body>
     <header>
-        <div class="flex-container-col">
-            <div class="web-title">
-                <h1>REDI WEB</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Cats</li>
-                    <li>About Me</li>
-                </ul>
-            </nav>
+        <div class="web-title">
+            <h1>REDI WEB</h1>
         </div>
+        <nav class="flex-navbar">
+            <ul class="flex-navbar">
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#cat">
+                    <li>Cat</li>
+                </a>
+                <a href="#about-me">
+                    <li>About Me</li>
+                </a>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <div class="desktop-main-container mobile-main-container">
-            <section id="cats-and-me">
-                <h2>These are Cats</h2>
-                <div class="cats-list-col cat1">
-                    <div class="cat-id-like">
-                        <img src="assets/pics/cat1.jpg" alt="An adorable orange cat">
-                        <h3>Budi</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laboriosam pariatur ullam
-                            accusantium maiores quis incidunt enim dolorum facilis unde!</p>
-                    </div>
+    <main class="mobile-flex-main desktop-flex-main">
+        <div class="desktop-child-content desktop-flex-main-content">
+            <article id="home">
+                <div class="text-center">
+                    <h2>Kucing</h2>
+                    <p class="desktop-styled-text">Kucing adalah spesies domestik dari mamalia karnivora. Tingkah
+                        lakunya membuatku gemas, kadang
+                        sebel
+                        juga sih.. Tapi, itulah kucing alias majikanku. Oleh karena itu, mari berkenalan dengan majikan
+                        saya.</p>
                 </div>
-                <div class="cats-list-col">
-                    <img src="assets/pics/cat2.jpg" alt="">
-                </div>
-                <div class="cats-list-col">
-                    <img src="assets/pics/cat3.jpg" alt="">
-                </div>
+            </article>
 
+            <article class="mobile-flex-cat bg-orange-rounded mobile-margin-top" id="cat">
+                <img src="assets/pics/cat1.jpg" alt="Kucing oren yang lucu">
+                <h3>Asep si Kucing Oren</h3>
+                <p class="text-center desktop-styled-text">Kucing oren memang dikenal barbar oleh sebagian orang, namun
+                    tidak bagiku. Kucing oren ini
+                    sangaaaaaat barbar. Bagaimana tidak? Dia mampu mangacak rumah dalam hitungan detik</p>
+            </article>
 
-            </section>
+            <article class="mobile-margin-top mobile-flex-cat bg-pink-rounded">
+                <img src="assets/pics/cat2.jpg" alt="Kucing oren yang lucu">
+                <h3>Dudung si Kucing Oren tapi Putih juga</h3>
+                <p class="text-center desktop-styled-text">Dudung adalah kucing yang cukup baik. Dia mampu mengerjakan
+                    tugas rumah seperti membereskan tempat tidurnya, makan sendiri, nyuci sendiri, bahkan membantuku
+                    mengerjakan tugas kuliah. Terbaik!</p>
+            </article>
 
-            <aside id="about-me">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos fugiat non
-                    suscipit, incidunt minima at beatae quibusdam hic nesciunt. Natus laborum necessitatibus distinctio
-                    nam suscipit quisquam, nulla explicabo nemo ea vel. In quae maxime accusantium corporis neque harum
-                    voluptatum architecto laudantium tenetur cumque, minima inventore blanditiis id molestiae assumenda
-                    hic.</p>
-            </aside>
+            <article class="mobile-margin-top mobile-flex-cat bg-blue-rounded">
+                <img src="assets/pics/cat3.jpg" alt="Kucing oren yang lucu">
+                <h3>Bobi si Kucing Kampung</h3>
+                <p class="text-center desktop-styled-text">Bobi, dia adalah kucing pasif dan lemot. Kerjanya cuma makan,
+                    boker, tidur. Jarang mandi karena kena air dikit aja langsung jadi reog.</p>
+            </article>
         </div>
+
+        <aside class="text-center bg-my-profile desktop-child-profile" id="about-me">
+            <h2>Tentang Saya</h2>
+            <img src="assets/pics/me.jpg" alt="Foto Pembuat">
+            <p class="desktop-styled-text">
+                Halo, Saya Redi Ahmad Supriatna, seorang mahasiswa Jurusan Sistem Komputer di salah satu universitas
+                swasta Kota Tangerang. Saya ingin menjadi seorang Fullstack Developer.
+                <br>
+                <br>
+                <br>
+                Apresiasi saya dengan bertepuk tangan melalui tombol di bawah ini
+            </p>
+            <button id="applause-button">Tepuk tangan</button>
+            <p class="desktop-styled-text">
+                Anda telah bertepuk tangan sebanyak <span id="counter">0</span> kali.
+            </p>
+
+        </aside>
     </main>
+
+    <footer class="text-center">
+        <span>Made by Redi Ahmad</span>
+    </footer>
+
+
+
+
+
+    <script src="assets/scripts/script.js"></script>
 
 </body>
 
