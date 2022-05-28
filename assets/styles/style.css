@@ -68,6 +68,14 @@ body {
     }
 }
 
+@media screen and (min-width: 1200px) {
+
+    body,
+    html {
+        font-size: 1em;
+    }
+}
+
 /* Web title styling */
 .web-title {
     display: flex;
